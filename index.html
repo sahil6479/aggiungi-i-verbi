@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="entry-div show">
+        <h1>Scegli il tuo difficile</h1>
+        <button id="facile-btn" onclick="levelFacile()">Facile</button>
+        <button id="media-btn" onclick="levelMedia()">Media</button>
+        <button id="difficile-btn" onclick="levelDifficile()">Difficile</button>
+    </div>
+    <div class="main-div hide">
+        <h1>DEVI AGGIUNGERE I VERBI.</h1>
+        <div class="container">
+            <p id="verbi-el"></p>
+            <p>+</p>
+            <p id="io-el"></p>
+        </div>
+        <input id="result-el" type="text" placeholder="Inserisci la tua  risposta :">
+        <input id="submit" type="submit" value="CONTROLLO" onclick="checkAnswer()">
+        <p id="msg-of-result-el"></p>
+        <button id="new-word-btn" onclick="newWord()">NUOVA PAROLA</button>
+        <button id="result-btn" onclick="result()">RISULTATO</button>
+    </div>
+
+    <script src="verbi.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

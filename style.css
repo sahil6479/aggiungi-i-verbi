@@ -1,0 +1,106 @@
+body{
+    background-image: url("images/word-game-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.entry-div{
+    display: none;
+    text-align: center;
+}
+div.show{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.entry-div h1{
+    grid-column: 1/-1;
+}
+.entry-div button{
+    max-height: 30px;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.hide{
+    display: none !important;
+}
+.entry-div{
+    display: none;
+    text-align: center;
+}
+.entry-div button{
+    display: initial;
+}
+.conatiner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+h1{
+    color: #FC7B54;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 40px;
+    display: inline-block;
+    padding: 40px;
+    color: #b1aebb;
+}
+#result-el{
+    background-color: transparent;
+    width: 250px;
+    height: 35px;
+    color: #b1aebb; 
+    font-size: 25px;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    font-size: 25px;
+}
+#result-el::placeholder{
+    font-size: 15px;
+    color: #b1aebb;
+}
+#result-el:focus{
+    outline-color: #a851ff;
+}
+#submit, button{
+    width: 170px;
+    max-height: min-content;
+    margin: 15px 0px;
+    background-color: #902BF5;
+    color: #fff;
+    padding: 7.5px 30px;
+    border: 1px #fff solid;
+    border-radius: 15px;
+}
+button{
+    display: none;
+}
+#submit:hover, button:hover{
+    transform: scale(1.05);
+    background-color: #a851ff;
+}
+
+
+
+@media (max-width: 850px){
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+        padding: 35px;
+    }
+}
