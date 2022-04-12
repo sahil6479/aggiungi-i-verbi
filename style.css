@@ -103,4 +103,7 @@ button{
         font-size: 20px;
         padding: 35px;
     }
+    #facile-btn, #difficile-btn, #media-btn{
+        width: 100px;
+    }
 }
